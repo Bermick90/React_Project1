@@ -1,38 +1,275 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  font-family: 'Roboto';
+  scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  margin: 0;
+  background-color: E5E5E5;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h2 {
+  color: #152d41;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.17;
+  margin-bottom: 80px;
+}
+
+h3 {
+  color: black;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.17;
+}
+
+h4 {
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.17;
+}
+
+.nav {
+  height: 50px;
+  margin: 0 auto;
+  background-color: #4e4e4e;
   display: flex;
-  flex-direction: column;
+  color: white;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.mainAdv {
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header {
+  background-image: url(assets/images/backgroundmain.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.adv {
+  max-width: 600px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  display: flex;
+  align-items: center;
+}
+
+.adv2 {
+  margin-top: 62px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+}
+
+.specDesc {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.button {
+  background-color: transparent;
+  margin-top: 50px;
+  padding: 10px 58px;
+  background: none;
+  border: 3px solid white;
+  display: flex;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition: 1s;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.button:hover {
+  background-color: white;
+  background: white;
+  color: black;
+}
+
+.menuRight {
+  display: flex;
+  float: right;
+  color: white;
+  justify-content: space-between;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.menuLeft {
+  float: Left;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.navigation :link {
+  text-decoration: none;
+}
+
+.navigation li:not(:last-child) {
+  margin-right: 46px;
+}
+
+.nav_color_white {
+  color: white;
+}
+
+#footer_desc {
+  background-color: #4e4e4e;
+  display: flex;
+  align-items: center;
+  padding: 24px 0 24px 0;
+}
+
+.footer_desc {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+#footer_desc p {
+  font-weight: 700;
+  flex-grow: 1;
+}
+.footer_font {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.white {
+  color: white;
+}
+
+.footer_font {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+#services-section_desc {
+  padding-top: 60px;
+  background-color: #405d78;
+}
+
+.services {
+  width: 75%;
+  margin: 0 auto;
+  padding: 60px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 63px;
+}
+
+.services-single {
+  background-color: #f1f1f1;
+  text-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  height: 194px;
+  width: 194px;
+  padding: 75px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  transition: 0.5s all;
+}
+
+.dot {
+  background-color: #e07a64;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  position: absolute;
+  top: -11px;
+  left: -11px;
+}
+
+.services-single:hover {
+  transform: scale(1.05);
+}
+
+.contact {
+  cursor: not-allowed;
+}
+
+.teamContainer {
+  color: black;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.our-team {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.our-team:not(:last-child) {
+  margin-bottom: 60px;
+}
+
+.our-team:nth-of-type(even) {
+  text-align: right;
+  flex-direction: row-reverse;
+}
+
+.space-bottom {
+  margin-bottom: 1rem;
+}
+
+.photo_1 {
+  background-image: url(assets/images/sniper2.jpg);
+}
+
+.photo_2 {
+  background-image: url(assets/images/demo2.jpg);
+}
+
+.person {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  flex-shrink: 0;
+}
+
+#specialist {
+  padding: 60px 0;
 }
