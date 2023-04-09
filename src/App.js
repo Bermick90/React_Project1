@@ -8,7 +8,6 @@ import Footer from './components/Footer';
 import SpecialistList from './components/Specialists/SpecialistList';
 import Offers from './components/Offers/Offers';
 
-//
 function App() {
   return (
     <>

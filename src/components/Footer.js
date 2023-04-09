@@ -1,13 +1,22 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faArrowUp91,
+  faCoffee,
+} from '@fortawesome/free-solid-svg-icons';
 const Footer = () => {
   return (
     <footer id="footer_desc">
-      <div class="container footer_desc">
-        <p class="white footer_font">
+      <div className="container footer_desc">
+        <p className="white footer_font">
           Nazwa firmy - wszelkie prawa zastrzeżone, 2022
         </p>
         <div>
-          <i class="fa-brands fa-instagram fa-2xl white"></i>
-          <i class="fa-brands fa-square-facebook fa-2xl white"></i>
+          <i className="fa-brands fa-instagram fa-2xl white">
+            <FontAwesomeIcon icon={faArrowUp91} />
+          </i>
+          <i className="fa-brands fa-square-facebook fa-2xl white">
+            <FontAwesomeIcon icon={faCoffee} />
+          </i>
         </div>
       </div>
     </footer>
