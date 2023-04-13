@@ -1,8 +1,8 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faArrowUp91,
-  faCoffee,
-} from '@fortawesome/free-solid-svg-icons';
+  faFacebook,
+  faInstagram,
+} from '@fortawesome/free-brands-svg-icons';
 const Footer = () => {
   return (
     <footer id="footer_desc">
@@ -11,12 +11,14 @@ const Footer = () => {
           Nazwa firmy - wszelkie prawa zastrzeżone, 2022
         </p>
         <div>
-          <i className="fa-brands fa-instagram fa-2xl white">
-            <FontAwesomeIcon icon={faArrowUp91} />
-          </i>
-          <i className="fa-brands fa-square-facebook fa-2xl white">
-            <FontAwesomeIcon icon={faCoffee} />
-          </i>
+          <FontAwesomeIcon
+            style={{ fontSize: '24px' }}
+            icon={faFacebook}
+          />
+          <FontAwesomeIcon
+            style={{ fontSize: '24px' }}
+            icon={faInstagram}
+          />
         </div>
       </div>
     </footer>
