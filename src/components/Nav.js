@@ -1,5 +1,3 @@
-//funkcja zwróci komponent
-
 const Navigation = () => {
   return (
     <nav className="nav">

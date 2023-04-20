@@ -3,6 +3,7 @@ import {
   faFacebook,
   faInstagram,
 } from '@fortawesome/free-brands-svg-icons';
+import '../App.css';
 const Footer = () => {
   return (
     <footer id="footer_desc">
@@ -12,11 +13,11 @@ const Footer = () => {
         </p>
         <div>
           <FontAwesomeIcon
-            style={{ fontSize: '24px' }}
+            className="icons_footer"
             icon={faFacebook}
           />
           <FontAwesomeIcon
-            style={{ fontSize: '24px' }}
+            className="icons_footer"
             icon={faInstagram}
           />
         </div>
